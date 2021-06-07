@@ -1,6 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
 
+import Playground from './components/Playground'
+
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
   - Name is capitalized
@@ -24,19 +26,23 @@ import { render } from 'react-dom'
 function Header(props) {
   console.log(props)
   return (
-   null
+    <div>
+      <h1 className='header'>{props.headerText}</h1>
+      <p>{props.dateText}</p>
+      <span>{props.tempText}</span>
+    </div>
   )
 }
 
 function App(props) {
   return (
     <div className='container'>
-      <Header
+      {/* <Header
         headerText='This is the Header'
         dateText='this is the Date'
         tempText='This is the Temp'
-      />
-      <Header
+      /> */}
+      {/* <Header
         headerText='This is the Header too'
         dateText='Date too'
         tempText='Temp too'
@@ -45,8 +51,9 @@ function App(props) {
         headerText='This is the Header too'
         dateText='Date too'
         tempText='Temp too'
-      />
+      /> */}
       <h1>Welcome to React, Web {props.cohort}</h1>
+      <Playground />
     </div>
   )
 }
