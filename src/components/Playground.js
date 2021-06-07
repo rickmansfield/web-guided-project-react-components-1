@@ -13,12 +13,18 @@ import React, { useState } from 'react'
 
 function Playground(props) {
   const [count, setCount] = useState(0)
-
+  const [weapon, setWeapon] = useState('scissors')
+  
   return (
     <div>
       <h1>Hello from Playground</h1>
       <p>For now the count is {count}</p>
       <button onClick={event => { setCount(count + 1) }}>Increase by 1</button>
+
+      <p>The current weapon is {weapon}</p>
+      <button onClick={e => { setWeapon('scissors')}}>pick scissors</button>
+      <button onClick={e => { setWeapon('rock')}}>pick rock</button>
+      <button onClick={e => { setWeapon('paper')}}>pick paper</button>
     </div>
   )
 }
