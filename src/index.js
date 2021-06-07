@@ -21,15 +21,34 @@ import { render } from 'react-dom'
   - Don't forget all tags need to close correctly
 */
 
+function Header(props) {
+  console.log(props)
+  return (
+   null
+  )
+}
+
 function App(props) {
   return (
     <div className='container'>
+      <Header
+        headerText='This is the Header'
+        dateText='this is the Date'
+        tempText='This is the Temp'
+      />
+      <Header
+        headerText='This is the Header too'
+        dateText='Date too'
+        tempText='Temp too'
+      />
+      <Header
+        headerText='This is the Header too'
+        dateText='Date too'
+        tempText='Temp too'
+      />
       <h1>Welcome to React, Web {props.cohort}</h1>
     </div>
   )
 }
 
-render(
-  <App cohort='37' />,
-  document.querySelector('#root')
-)
+render(<App cohort='44' />, document.querySelector('#root'))
