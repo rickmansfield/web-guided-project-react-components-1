@@ -1,5 +1,5 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
 
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
@@ -21,15 +21,18 @@ import { render } from 'react-dom'
   - Don't forget all tags need to close correctly
 */
 
-function App(props) {
+//we may have many of these funtions
+function App(props) { // one object called "props"
   return (
     <div className='container'>
       <h1>Welcome to React, Web {props.cohort}</h1>
+      <div> {props.instructor} Welcomes you!</div>
     </div>
   )
 }
 
+//only once per app usually
 render(
-  <App cohort='37' />,
+  <App cohort='37' instructor= 'Gabe' />, // element(s)
   document.querySelector('#root')
 )
