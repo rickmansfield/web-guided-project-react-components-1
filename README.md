@@ -2,6 +2,8 @@
 
 - [React Components and Component State](#react-components-and-component-state)
   - [Running this project](#running-this-project)
+  - [Gabe's You Tube Click me](#gabes-you-tube-click-me)
+  - [cool stuff from Gabe's video](#cool-stuff-from-gabes-video)
 
 ## Running this project
 
@@ -17,3 +19,9 @@ being used by another application.
 - Run `npm start` to compile the project and spin up a dev server on `http://localhost:1234`.
 
 
+## [Gabe's You Tube Click me](https://youtu.be/h28bgpftQaM)
+
+## cool stuff from Gabe's video
+![Usage vs Definition](src\images\Capture.JPG)
+![Definition & Invocation](src\images\Capture2.JPG)
+![Components Render Other Components](src\images\Capture3.JPG)

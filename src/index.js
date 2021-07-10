@@ -23,16 +23,20 @@ import { render } from 'react-dom';
 
 //we may have many of these funtions
 function App(props) { // one object called "props"
+  const { cohort, instructor, happy, week } = props;
   return (
     <div className='container'>
-      <h1>Welcome to React, Web {props.cohort}</h1>
-      <div> {props.instructor} Welcomes you!</div>
+      <h1 id="mainHeading">Welcome to React, Web {cohort}</h1>
+      <div> {instructor} Welcomes you!</div>
+      {/* <div>He is {happy}</div> */}
+      {happy ? <div>True Very Happy</div> : <div>False Unhappy</div>}
+      <div>It is week {week}</div>
     </div>
   )
 }
 
 //only once per app usually
 render(
-  <App cohort='37' instructor= 'Gabe' />, // element(s)
+  <App cohort='37' instructor= 'Gabe' happy={true} week='2'/>, // element(s)
   document.querySelector('#root')
 )
