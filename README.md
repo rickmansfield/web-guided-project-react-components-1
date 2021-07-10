@@ -1,5 +1,8 @@
 # React Components and Component State
 
+- [React Components and Component State](#react-components-and-component-state)
+  - [Running this project](#running-this-project)
+
 ## Running this project
 
 This project is set up with [Parcel Bundler](https://parceljs.org/), an npm package
